@@ -9,7 +9,6 @@ const Reservation = require("./models/reservation");
 const Consultant = require("./models/consultant");
 const Comment = require("./models/comment");
 const Notification = require("./models/notification");
-require('dotenv').config({ path: path.resolve(__dirname, './config/index.env') })
 
 const connection = { host: "127.0.0.1", port: 6379 };
 
