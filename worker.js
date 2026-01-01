@@ -10,7 +10,7 @@ const Consultant = require("./models/consultant");
 const Comment = require("./models/comment");
 const Notification = require("./models/notification");
 
-const connection = { host: "127.0.0.1", port: 6379 };
+const connection = { path: '/home/nivatoir/redis/redis.sock' };
 
 mongoose.connect(process.env.MONGO_CONECTION)
     .then(() => console.log("✅ Mongo connected (worker)"))
